@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.title-td {
+	width: 70%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 200px;
+}
+

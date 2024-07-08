@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Noto Sans KR", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+}
+
+.form_set {
+	display: flex;
+	justify-content: space-between;
+}
+
+.input_button {
+	display: flex;
+}
+
+.form_select {
+	text-align: end;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f0f0f0;
+}
+
+.form-container {
+	background-color: #fff;
+	padding: 20px; /* Reduced padding */
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 500px; /* Reduced max width */
+	margin: 0 20px;
+	/* Margin to ensure space around the form on smaller screens */
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group {
+	align-items: center;
+	margin-bottom: 15px; /* Slightly reduced margin */
+}
+
+.form_button{
+	text-align: center;
+}
+
+.form_button button {
+	font-size: 20px;
+	padding: 10px;
+	width:100px;
+	cursor: pointer;
+}
+
+label {
+	width: 30%;
+	font-weight: bold;
+	font-size: 1em; /* Slightly reduced font size */
+}
+
+
+.form-group a {
+	text-decoration: none;
+	color: inherit;
+	display: block; /* Ensure the anchor fills the button */
+}

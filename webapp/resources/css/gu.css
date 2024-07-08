@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* .di {
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+} */
+
+.modal2 {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 3px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.di .buttons > button {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+}
+
+.buttons > button > i {
+	margin-left:5px;
+	color:#acacac;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#productForm input {
+   border: none;
+}
+
+#productForm th {
+   padding-left: 20px;
+}
+
+#productForm {
+   visibility: visible;
+   display: block;
+   position: fixed;
+   width: 590px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: white;
+   box-shadow: 00px 0px 10px 0px;
+}
+
+      

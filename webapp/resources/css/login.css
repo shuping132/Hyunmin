@@ -1,0 +1,199 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Noto Sans KR", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+}
+
+
+button {
+  padding: 0;
+}
+
+.startbutton {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  height: 35%;
+}
+
+.startbutton button {
+  border: none;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.home_button button {
+  border: 1px solid rgb(200, 200, 200);
+  width: 100%;
+  height: 50px;
+  font-size: 23px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.home button:nth-child(n + 2):not(.selected_button) {
+  border-left: none;
+}
+
+.home button:hover {
+  text-decoration: underline;
+}
+
+.home .none_selected_button {
+  border-bottom: 3px solid #1c5a94;
+}
+
+.home .selected_button {
+  background-color: white;
+  border: 3px solid #1c5a94;
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+.home > h1{
+	margin-top: 100px
+}
+
+.login_form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_form input {
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 3px;
+  width: 200px;
+  padding: 10px;
+  height: 20px;
+  margin: 20px 0;
+}
+
+.form_label {
+	width: 80px;
+}
+
+.login_form > div {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+
+.buttonsBlock button {
+	margin-right: 10px; 
+	cursor : pointer;
+	margin-top: 30px;
+	width: 210px;
+	height: 50px;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 500;
+	background-color: lightgray;
+}
+
+.buttonsBlock{
+	margin-top: 40px;
+	
+}
+
+.register_btn {
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 30px;
+	width: 210px;
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+	border: none;
+	background-color: #F0F0F0;
+	text-decoration: none;
+	color: black
+}
+
+.register_btn:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.intro {
+  background-image: url(../img/8187209.jpg);
+  height: 100%;
+}
+
+#splash-screen {
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+#splash-screen img {
+  width: 800px;
+  height: auto;
+  margin-left: 100px;
+  opacity: 0.9;
+}
+
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home h1 {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  font-size: 30px;
+}
+
+.home_button {
+  width: 60%;
+  display: flex;
+}
+
+.start_intro {
+  background-color: white;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 2s; /* 나중에 2s로 변경하기 */
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
